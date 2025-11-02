@@ -1,0 +1,10 @@
+^C:\FLUTTER\TELA_RESPONSIVA\BUILD\WINDOWS\X64\CMAKEFILES\E290B9E915F75E02EC017769085D307A\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
